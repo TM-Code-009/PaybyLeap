@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add these to your CSS file */
+
+/* Animation for sliding in from the left */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for sliding in from the right */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for sliding in from the top */
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for sliding in from the bottom */
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Class to apply sliding effect */
+.slideIn-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slideIn-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.slideIn-top {
+  animation: slideInTop 1s ease-out forwards;
+}
+
+.slideIn-bottom {
+  animation: slideInBottom 1s ease-out forwards;
+}
+
+/* Add these styles to create the smooth entrance effect */
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.slide-left {
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+.slide-right {
+  animation: slideInRight 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
