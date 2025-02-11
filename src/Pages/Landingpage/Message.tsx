@@ -16,7 +16,7 @@ const Message = () => {
     emailjs
       .send(
         "service_rgdt14o",  // Replace with EmailJS Service ID
-        "template_tkmebde", // Replace with EmailJS Template ID
+        "", // Replace with EmailJS Template ID
         formData,
         "YUlp4tn081bGH2g1z"   // Replace with EmailJS Public Key
       )
